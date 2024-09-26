@@ -37,7 +37,7 @@ body {
   }
 
   .nav-sidebar {
-    @apply fixed left-0 top-0 w-full h-screen bg-black-200 p-10;
+    @apply fixed left-0 top-0 w-full h-screen bg-black-200 p-10 z-50;
   }
   .nav-buttons {
     @apply text-neutral-400 transition ease-in-out delay-150 hover:text-white focus:outline-none;
@@ -62,7 +62,7 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply xl:text-5xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
   }
 
   /* about section */
