@@ -8,5 +8,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-Music track: Spaceship by Lukrembo
+Music track: Ethos by Epic Spectrum
 Source: https://freetouse.com/music
+Free Music Without Copyright (Safe)

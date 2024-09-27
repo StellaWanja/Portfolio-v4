@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import About from "./About";
 import Starfield from "../canvas/StarField";
 

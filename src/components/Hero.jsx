@@ -1,5 +1,5 @@
 import Spaceman from "../canvas/Spaceman";
-import Button from "./Button";
+import Button from "./Buttons/Button";
 
 const Hero = () => {
   return (
