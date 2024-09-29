@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Volume2, VolumeX } from "react-feather";
+import { HiVolumeUp, HiVolumeOff  } from "react-icons/hi";
 import audioSrc from "../../assets/sounds/bg-music.mp3";
 
 const AudioButton = () => {
@@ -19,7 +19,7 @@ const AudioButton = () => {
   return (
     <>
       <button className="nav-buttons" onClick={audioCtrl}>
-        {isPlaying ? <Volume2 /> : <VolumeX />}
+        {isPlaying ? <HiVolumeUp /> : <HiVolumeOff />}
       </button>
       <audio ref={audioRef} src={audioSrc} />
     </>

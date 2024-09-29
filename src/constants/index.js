@@ -1,3 +1,10 @@
+import {
+  RiTailwindCssFill,
+  RiHtml5Line,
+  RiCss3Fill,
+  RiJavascriptLine,
+} from "react-icons/ri";
+
 export const navLinks = [
   {
     id: 1,
@@ -20,3 +27,4 @@ export const navLinks = [
     href: "#contact",
   },
 ];
+

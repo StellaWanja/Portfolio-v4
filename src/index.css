@@ -40,7 +40,7 @@ body {
     @apply fixed left-0 top-0 w-full h-screen bg-black-200 p-10 z-50;
   }
   .nav-buttons {
-    @apply text-neutral-400 transition ease-in-out delay-150 hover:text-white focus:outline-none;
+    @apply text-neutral-400 text-xl transition ease-in-out delay-150 hover:text-white focus:outline-none;
   }
 
   .text-gray_gradient {
@@ -76,6 +76,10 @@ body {
 
   .grid-subtext {
     @apply text-[#afb0b6] text-base font-generalsans;
+  }
+
+  .grid-link{
+    @apply text-white transition ease-in-out delay-150 hover:underline;
   }
 
   .copy-container {

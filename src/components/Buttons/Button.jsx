@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ name, isBeam = false, containerClass }) => {
+const Button = ({ children, isBeam = false, containerClass }) => {
   return (
     <button className={`btn ${containerClass}`}>
       {isBeam && (
@@ -9,7 +9,7 @@ const Button = ({ name, isBeam = false, containerClass }) => {
           <span className="btn-ping_dot"></span>
         </span>
       )}
-      {name}
+      {children}
     </button>
   );
 };

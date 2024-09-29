@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, XCircle } from "react-feather";
+import { FaRegCircleXmark } from "react-icons/fa6";
+import { HiOutlineMenu } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
 import Logo from "../../assets/logo.svg";
 import { containerVars, menuVars } from "../../variants";
@@ -30,7 +31,7 @@ const Navbar = () => {
             className="nav-buttons sm:hidden flex"
             aria-label="Toggle Menu"
           >
-            <Menu />
+            <HiOutlineMenu />
           </button>
         </nav>
       )}
@@ -57,7 +58,7 @@ const Navbar = () => {
                 </a>
 
                 <button className="nav-buttons" onClick={toggleMenu}>
-                  <XCircle />
+                  <FaRegCircleXmark />
                 </button>
               </div>
 
