@@ -1,9 +1,26 @@
 import {
-  RiTailwindCssFill,
-  RiHtml5Line,
-  RiCss3Fill,
-  RiJavascriptLine,
-} from "react-icons/ri";
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaBootstrap,
+  FaReact,
+  FaGitAlt, FaBolt 
+} from "react-icons/fa";
+import { RiTailwindCssFill, RiPlantFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { SiTypescript, SiExpress, SiMongodb, SiJest } from "react-icons/si";
+import { MdOnlinePrediction } from "react-icons/md";
+import { GrMysql } from "react-icons/gr";
+import { PiBookOpenTextBold } from "react-icons/pi";
+import CurioScribeImg from "../assets/curioscribe.png";
+import EnvisioImg from "../assets/envisio.png";
+import BoltImg from "../assets/bolt.png";
+import PlantlyfImg from "../assets/plantlyf.png";
+import SpotlightEffect1 from "../assets/spotlight1.png";
+import SpotlightEffect2 from "../assets/spotlight2.png";
+import SpotlightEffect3 from "../assets/spotlight3.png";
+import SpotlightEffect4 from "../assets/spotlight4.png";
 
 export const navLinks = [
   {
@@ -28,3 +45,85 @@ export const navLinks = [
   },
 ];
 
+export const techStack = [
+  { tech: "HTML", icon: FaHtml5 },
+  { tech: "CSS", icon: FaCss3Alt },
+  { tech: "Tailwind", icon: RiTailwindCssFill },
+  { tech: "JavaScript", icon: IoLogoJavascript },
+  { tech: "NodeJS", icon: FaNodeJs },
+  { tech: "TypeScript", icon: SiTypescript },
+  { tech: "Express", icon: SiExpress },
+  { tech: "React", icon: FaReact },
+  { tech: "Bootstrap", icon: FaBootstrap },
+  { tech: "MySQL", icon: GrMysql },
+  { tech: "MongoDB", icon: SiMongodb },
+  { tech: "Git", icon: FaGitAlt },
+  { tech: "Jest", icon: SiJest },
+  { tech: ".Net", icon: AiOutlineDotNet },
+];
+
+export const portfolioProjects = [
+  {
+    title: "CurioScribe",
+    description:
+      "A dynamic content generation tool leveraging the OpenAI API to craft engaging articles and tales, currently being built using React, Node.js, Express.js, MySQL, TypeScript",
+    image: CurioScribeImg,
+    websiteLink: "",
+    githubLink: "https://github.com/StellaWanja/CurioScribe",
+    spotlight: SpotlightEffect1,
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+      color: '#FFFFFF',
+    },
+    logo: PiBookOpenTextBold
+  },
+  {
+    title: "Envisio",
+    description:
+      "A full-stack web application that predicts whether breast cancer is benign or malignant, built with React, Node.js, Express.js, MongoDB",
+    image: EnvisioImg,
+    websiteLink: "https://envisio-frontend.vercel.app",
+    githubLink: "https://github.com/StellaWanja/MERN-Envisio",
+    spotlight: SpotlightEffect2,
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      color: '#FFFFFF',
+    },
+    logo: MdOnlinePrediction
+  },
+  {
+    title: "Bolt",
+    description:
+      "Developed a shoe ecommerce website using HTML,CSS and JavaScript.",
+    image: BoltImg,
+    websiteLink: "https://stellawanja.github.io/Bolt/",
+    githubLink: "https://github.com/StellaWanja/Bolt",
+    spotlight: SpotlightEffect3,
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+      color: '#FFFFFF',
+    },
+    logo: FaBolt 
+  },
+  {
+    title: "PlantLyf",
+    description: "A responsive landing page built using HTML and CSS.",
+    image: PlantlyfImg,
+    websiteLink: "https://stellawanja.github.io/PlantLyf/",
+    githubLink: "https://github.com/StellaWanja/PlantLyf/",
+    spotlight: SpotlightEffect4,
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      color: '#FFFFFF',
+    },
+    logo: RiPlantFill
+  },
+];

@@ -1,41 +1,12 @@
 import Lottie from "lottie-react";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaBootstrap,
-  FaReact,
-  FaGitAlt,
-} from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io5";
-import { AiOutlineDotNet } from "react-icons/ai";
-import { SiTypescript, SiExpress, SiMongodb, SiJest } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
 import Button from "./Buttons/Button";
 import planetAnimation from "../assets/animations/planet.json";
-
-const techStack = [
-  { tech: "HTML", icon: <FaHtml5 /> },
-  { tech: "CSS", icon: <FaCss3Alt /> },
-  { tech: "Tailwind", icon: <RiTailwindCssFill /> },
-  { tech: "JavaScript", icon: <IoLogoJavascript /> },
-  { tech: "NodeJS", icon: <FaNodeJs /> },
-  { tech: "TypeScript", icon: <SiTypescript /> },
-  { tech: "Express", icon: <SiExpress /> },
-  { tech: "React", icon: <FaReact /> },
-  { tech: "Bootstrap", icon: <FaBootstrap /> },
-  { tech: "MySQL", icon: <GrMysql /> },
-  { tech: "MongoDB", icon: <SiMongodb /> },
-  { tech: "Git", icon: <FaGitAlt /> },
-  { tech: "Jest", icon: <SiJest /> },
-  { tech: ".Net", icon: <AiOutlineDotNet /> },
-];
+import { techStack } from "../constants";
 
 const About = () => {
   return (
     <section className="c-space my-20">
-      <div className="grid lg:grid-cols-3 lg:grid-rows-6  grid-cols-1 gap-5 h-full">
+      <div className="grid lg:grid-cols-3 lg:grid-rows-4  grid-cols-1 gap-5 h-full">
         <div className="col-span-2 md:row-span-2">
           <div className="grid-container">
             <h3 className="grid-headtext">About me</h3>
@@ -100,15 +71,18 @@ const About = () => {
             </p>
 
             <div className="grid lg:grid-cols-7 sm:grid-cols-5 grid-cols-3 gap-3">
-              {techStack.map(({ tech, icon }, index) => (
-                <div
-                  key={`tech-stack-${index}`}
-                  className="text-white flex flex-col items-center gap-2"
-                >
-                  <span className="text-3xl"> {icon}</span>
-                  <p className="text-sm uppercase font-semibold">{tech}</p>
-                </div>
-              ))}
+              {techStack.map(({ tech, icon }, index) => {
+                const Icon = icon;
+                return (
+                  <div
+                    key={`tech-stack-${index}`}
+                    className="text-white flex flex-col items-center gap-2"
+                  >
+                    <span className="text-3xl"> <Icon /></span>
+                    <p className="text-sm uppercase font-semibold">{tech}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
