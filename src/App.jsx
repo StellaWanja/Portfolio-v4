@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { useRef } from "react";
-import { Navbar, Hero, About, Starfield, Portfolio } from "./components";
+import { Navbar, Hero, About, Starfield, Portfolio, Articles, Contact } from "./components";
 
 const App = () => {
   const wrapperRef = useRef(null);
@@ -24,6 +24,12 @@ const App = () => {
           </div>
           <div id="work" >
             <Portfolio />
+          </div>
+          <div id="articles" >
+            <Articles />
+          </div>
+          <div id="contact" >
+            <Contact />
           </div>
         </div>
       </main>

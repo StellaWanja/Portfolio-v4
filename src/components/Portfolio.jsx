@@ -3,6 +3,7 @@ import { FaGithubAlt } from "react-icons/fa";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { portfolioProjects } from "../constants";
+import { Link } from "react-router-dom";
 
 const projectCount = portfolioProjects.length;
 
@@ -24,6 +25,9 @@ const Portfolio = () => {
   return (
     <section className="c-space my-20">
       <h3 className="head-text">My Work</h3>
+      <p className="grid-subtext">
+        Take a look at some of the projects I've worked on.
+      </p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
@@ -49,26 +53,26 @@ const Portfolio = () => {
           </div>
 
           <div className="flex items-center flex-wrap gap-5">
-            <a
-              href={currentProject.githubLink}
+            <Link
+              to={currentProject.githubLink}
               target="_blank"
               rel="noreferrer"
               className="text-white-600 text-xl hover:text-white transition ease-in-out delay-150"
               aria-label="View the code"
             >
               <FaGithubAlt />
-            </a>
+            </Link>
 
             {currentProject.websiteLink && (
-              <a
-                href={currentProject.websiteLink}
+              <Link
+                to={currentProject.websiteLink}
                 target="_blank"
                 rel="noreferrer"
                 className="text-white-600 text-xl hover:text-white transition ease-in-out delay-150"
-                aria-label="View the code"
+                aria-label="View the site"
               >
                 <TbWorld />
-              </a>
+              </Link>
             )}
           </div>
 
@@ -89,8 +93,8 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 w-full  rounded-lg h-96 md:h-full relative">
-        <div className="absolute top-0 right-0">
+        <div className="border border-black-300 w-full  rounded-lg h-96 md:h-full relative shadow-2xl shadow-black-200">
+          <div className="absolute top-0 right-0">
             <img
               src={currentProject.spotlight}
               alt="spotlight-effect"

@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import Button from "./Buttons/Button";
 import planetAnimation from "../assets/animations/planet.json";
 import { techStack } from "../constants";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -19,15 +20,14 @@ const About = () => {
             <p className="grid-subtext">
               I am a technical writer as well and enjoy blogging about my coding
               journey and what I learn. My blog can be found{" "}
-              <a
-                href="https://stylades.hashnode.dev/"
+              <Link
+                to="https://stylades.hashnode.dev/"
                 target="_blank"
                 rel="noreferrer"
                 className="grid-link"
               >
-                here
-              </a>
-              .
+                here.
+              </Link>
             </p>
             <p className="grid-subtext">
               When I&apos;m not in front of a computer screen, I&apos;m probably
@@ -46,9 +46,11 @@ const About = () => {
                 I&apos;m based in Nairobi, Kenya and open to remote work
                 worldwide.
               </p>
-              <Button isBeam containerClass="w-full mt-10">
-                Contact Me
-              </Button>
+              <a href="#contact">
+                <Button isBeam containerClass="w-full mt-10">
+                  Contact Me
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -59,15 +61,14 @@ const About = () => {
             <p className="grid-subtext">
               I have full-stack developer experience working with the following
               technologies. For more details, visit my{" "}
-              <a
-                href="https://www.linkedin.com/in/stella-w-njoroge/"
+              <Link
+                to="https://www.linkedin.com/in/stella-w-njoroge/"
                 target="_blank"
                 rel="noreferrer"
                 className="grid-link"
               >
-                LinkedIn
-              </a>
-              .
+                LinkedIn.
+              </Link>
             </p>
 
             <div className="grid lg:grid-cols-7 sm:grid-cols-5 grid-cols-3 gap-3">
@@ -78,7 +79,10 @@ const About = () => {
                     key={`tech-stack-${index}`}
                     className="text-white flex flex-col items-center gap-2"
                   >
-                    <span className="text-3xl"> <Icon /></span>
+                    <span className="text-3xl">
+                      {" "}
+                      <Icon />
+                    </span>
                     <p className="text-sm uppercase font-semibold">{tech}</p>
                   </div>
                 );
