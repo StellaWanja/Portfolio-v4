@@ -1,10 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
-import { useRef } from "react";
 import { Navbar, Hero, About, Starfield, Portfolio, Articles, Contact } from "./components";
 
 const App = () => {
-  const wrapperRef = useRef(null);
-
   return (
     <BrowserRouter>
       <main className="max-w-7xl mx-auto">
@@ -15,9 +12,9 @@ const App = () => {
         backgroundColor="black"
       />
         <Navbar />
-        <div ref={wrapperRef}>
+        <div>
           <div id="home">
-            <Hero scrollContainer={wrapperRef} />
+            <Hero/>
           </div>
           <div id="about" >
             <About />
