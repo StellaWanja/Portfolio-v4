@@ -6,6 +6,7 @@ import {
   FaReact,
   FaGitAlt,
   FaBolt,
+  FaReceipt 
 } from "react-icons/fa";
 import { RiTailwindCssFill, RiPlantFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -17,8 +18,9 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 import EnvisioImg from "../assets/envisio.png";
 import BoltImg from "../assets/bolt.png";
 import PlantlyfImg from "../assets/plantlyf.png";
-import FetchImg from "../assets/FetchImg.png";	
-// import SpotlightEffect1 from "../assets/spotlight1.png";
+import FetchImg from "../assets/FetchImg.png";
+import InvoiceHubImg from "../assets/invoicehub.png";	
+import SpotlightEffect1 from "../assets/spotlight1.png";
 import SpotlightEffect2 from "../assets/spotlight2.png";
 import SpotlightEffect3 from "../assets/spotlight3.png";
 import SpotlightEffect4 from "../assets/spotlight4.png";
@@ -70,6 +72,21 @@ export const techStack = [
 ];
 
 export const portfolioProjects = [
+  {
+    title: "InvoiceHub",
+    description: "A NextJS based web app for managing invoices.",
+    image: InvoiceHubImg,
+    websiteLink: "https://invoice-hub-nine.vercel.app",
+    githubLink: "https://github.com/StellaWanja/InvoiceHub",
+    spotlight: SpotlightEffect1,
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      color: "#FFFFFF",
+    },
+    logo: FaReceipt ,
+  },
   {
     title: "Fetch",
     description: "An album app built with React",
