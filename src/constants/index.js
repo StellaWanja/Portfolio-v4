@@ -6,20 +6,28 @@ import {
   FaReact,
   FaGitAlt,
   FaBolt,
-  FaReceipt 
+  FaReceipt,
 } from "react-icons/fa";
 import { RiTailwindCssFill, RiPlantFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineDotNet } from "react-icons/ai";
-import { SiTypescript, SiExpress, SiMongodb, SiJest } from "react-icons/si";
+import {
+  SiTypescript,
+  SiExpress,
+  SiMongodb,
+  SiJest,
+  SiGitbook,
+} from "react-icons/si";
 import { MdOnlinePrediction } from "react-icons/md";
 import { GrMysql } from "react-icons/gr";
 import { FaRegCirclePlay } from "react-icons/fa6";
+
 import EnvisioImg from "../assets/envisio.png";
 import BoltImg from "../assets/bolt.png";
 import PlantlyfImg from "../assets/plantlyf.png";
 import FetchImg from "../assets/FetchImg.png";
-import InvoiceHubImg from "../assets/invoicehub.png";	
+import InvoiceHubImg from "../assets/invoicehub.png";
+import CurioScribeImg from "../assets/CurioScribeImg.png";
 import SpotlightEffect1 from "../assets/spotlight1.png";
 import SpotlightEffect2 from "../assets/spotlight2.png";
 import SpotlightEffect3 from "../assets/spotlight3.png";
@@ -73,6 +81,22 @@ export const techStack = [
 
 export const portfolioProjects = [
   {
+    title: "CurioScribe",
+    description:
+      "A NextJS based web app for dynamic content generation using AI.",
+    image: CurioScribeImg,
+    websiteLink: "https://curio-scribe.vercel.app/",
+    githubLink: "https://github.com/StellaWanja/CurioScribe-Next",
+    spotlight: SpotlightEffect2,
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+      color: "#FFFFFF",
+    },
+    logo: SiGitbook,
+  },
+  {
     title: "InvoiceHub",
     description: "A NextJS based web app for managing invoices.",
     image: InvoiceHubImg,
@@ -85,7 +109,7 @@ export const portfolioProjects = [
       boxShadow: "0px 0px 60px 0px #AA3C304D",
       color: "#FFFFFF",
     },
-    logo: FaReceipt ,
+    logo: FaReceipt,
   },
   {
     title: "Fetch",
@@ -149,20 +173,4 @@ export const portfolioProjects = [
     },
     logo: RiPlantFill,
   },
-  // {
-  //   title: "CurioScribe",
-  //   description:
-  //     "A dynamic content generation tool leveraging the OpenAI API to craft engaging articles and tales, currently being built using React, Node.js, Express.js, MySQL, TypeScript",
-  //   image: CurioScribeImg,
-  //   websiteLink: "",
-  //   githubLink: "https://github.com/StellaWanja/CurioScribe",
-  //   spotlight: SpotlightEffect1,
-  //   logoStyle: {
-  //     backgroundColor: "#2A1816",
-  //     border: "0.2px solid #36201D",
-  //     boxShadow: "0px 0px 60px 0px #AA3C304D",
-  //     color: "#FFFFFF",
-  //   },
-  //   logo: PiBookOpenTextBold,
-  // },
 ];
