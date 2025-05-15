@@ -8,7 +8,7 @@ import {
   FaBolt,
   FaReceipt,
 } from "react-icons/fa";
-import { RiTailwindCssFill, RiPlantFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiPlantFill, RiNextjsLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineDotNet } from "react-icons/ai";
 import {
@@ -17,6 +17,7 @@ import {
   SiMongodb,
   SiJest,
   SiGitbook,
+  SiPostgresql 
 } from "react-icons/si";
 import { MdOnlinePrediction } from "react-icons/md";
 import { GrMysql } from "react-icons/gr";
@@ -71,8 +72,10 @@ export const techStack = [
   { tech: "TypeScript", icon: SiTypescript },
   { tech: "Express", icon: SiExpress },
   { tech: "React", icon: FaReact },
+  { tech: "NextJS", icon: RiNextjsLine },
   { tech: "Bootstrap", icon: FaBootstrap },
   { tech: "MySQL", icon: GrMysql },
+  { tech: "PostgreSQL", icon: SiPostgresql },
   { tech: "MongoDB", icon: SiMongodb },
   { tech: "Git", icon: FaGitAlt },
   { tech: "Jest", icon: SiJest },
